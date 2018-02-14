@@ -11,13 +11,10 @@ export default {
 		format: 'cjs'
 	},
 	external: [
-		'uglify-js',
-		'gulp-uglify',
-
-		'babel-core',
 		'readable-stream',
-		'duplexer2',
 		'through2',
+		'gulp-uglify',
+		'uglify-js',
 		'vinyl-fs'
 	],
 	name: pkg.name,

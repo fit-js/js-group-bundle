@@ -1,27 +1,27 @@
 {
   "name": "js-group-bundle",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "scripts": {
     "dev": "rollup -c --watch",
     "prod": "rollup -c"
   },
   "dependencies": {
-    "duplexer2": "^0.0.2",
-    "gulp-uglify": "^2.1.2",
-    "readable-stream": "^2.3.3",
+    "readable-stream": "^2.3.4",
     "through2": "^2.0.3",
+    "uglify-js": "^3.3.10",
     "vinyl-fs": "^2.4.4"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "duplexer2": "^0.0.2",
     "gulp-clip-empty-files": "^0.1.2",
-    "gulp-fn": "0.0.0",
-    "gulp-plumber": "^1.1.0",
-    "rollup": "^0.50.0",
-    "rollup-plugin-commonjs": "^8.2.1",
+    "gulp-fn": "^0.0.0",
+    "gulp-plumber": "^1.2.0",
+    "gulp-uglify": "^2.1.2",
+    "rollup": "^0.50.1",
+    "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-local-resolve": "^1.0.7",
-    "rollup-plugin-node-resolve": "^3.0.0"
+    "rollup-plugin-node-resolve": "^3.0.2"
   },
   "main": "bundle.js",
   "module": "module.js",

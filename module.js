@@ -43,14 +43,13 @@ export function init (config, core) {
 
 function build (file) {
 	var msg = file ? file : pkg.name
+	console.log (pkg.name + ' compiling');
 	console.time (msg);
-	buildDefault();
-	console.timeEnd (msg);
-}
-
-function buildDefault () {
-
-	return vfs.src (source, { sourcemaps, cwd })
+	
+	vfs.src (source, { sourcemaps, cwd })
+		.on ('end', () => {
+			console.timeEnd (msg);
+		})
 		.pipe (gulpClip())
 		.pipe (gulpPlumber())
 		.pipe (gulpFn (
